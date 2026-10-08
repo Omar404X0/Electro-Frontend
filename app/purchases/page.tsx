@@ -77,7 +77,7 @@ export default function PurchasesPage() {
 
           <nav className={`hidden md:flex flex-row items-center gap-4 lg:gap-8 text-sm font-medium ${dark ? "text-white/70" : "text-black/60"}`}>
             <a href="/prodacts" onClick={(e) => goTo('/prodacts', e)} className={`transition-colors ${navLink}`}>Shop</a>
-            <a href="/deels" onClick={(e) => goTo('/deels', e)} className={`transition-colors ${navLink}`}>Deals</a>
+            
             <a href="/purchases" onClick={stay} className={`whitespace-nowrap ${activeLink}`}>My Purchases</a>
             <a href="/support" onClick={(e) => goTo('/support', e)} className={`transition-colors ${navLink}`}>Support</a>
           </nav>
@@ -112,7 +112,7 @@ export default function PurchasesPage() {
         {menuOpen && (
           <nav className={`md:hidden flex flex-col gap-1 px-4 sm:px-5 pb-4 text-sm font-medium max-h-[70dvh] overflow-y-auto ${dark ? "text-white/70" : "text-black/60"}`}>
             <a href="/prodacts" onClick={(e) => goTo('/prodacts', e)} className={`py-3 transition-colors ${navLink}`}>Shop</a>
-            <a href="/deels" onClick={(e) => goTo('/deels', e)} className={`py-3 transition-colors ${navLink}`}>Deals</a>
+            
             <a href="/purchases" onClick={stay} className={`py-3 ${activeLink}`}>My Purchases</a>
             <a href="/support" onClick={(e) => goTo('/support', e)} className={`py-3 transition-colors ${navLink}`}>Support</a>
           </nav>

@@ -137,7 +137,7 @@ export default function SupportPage() {
 
           <nav className={`hidden md:flex flex-row items-center gap-4 lg:gap-8 text-sm font-medium ${dark ? "text-white/70" : "text-black/60"}`}>
             <a onClick={() => go('/prodacts')} href="#" className={`transition-colors ${navLink}`}>Shop</a>
-            <a onClick={() => go('/deels')} href="#" className={`transition-colors ${navLink}`}>Deals</a>
+            
             <a onClick={() => go('/purchases')} href="#" className={`transition-colors whitespace-nowrap ${navLink}`}>My Purchases</a>
             <a href="#" className={`transition-colors font-bold ${dark ? "text-white" : "text-black"}`}>Support</a>
             <GenerateButton onClick={() => setchat(true)}></GenerateButton>
@@ -170,7 +170,7 @@ export default function SupportPage() {
         {menuOpen && (
           <nav className={`md:hidden flex flex-col gap-1 px-4 sm:px-5 pb-4 text-sm font-medium max-h-[70dvh] overflow-y-auto ${dark ? "text-white/70" : "text-black/60"}`}>
             <a href="#" onClick={() => go('/prodacts')} className={`py-3 transition-colors ${navLink}`}>Shop</a>
-            <a href="#" onClick={() => go('/deels')} className={`py-3 transition-colors ${navLink}`}>Deals</a>
+            
             <a href="#" onClick={() => go('/purchases')} className={`py-3 transition-colors ${navLink}`}>My Purchases</a>
             <a href="#" onClick={() => setMenuOpen(false)} className={`py-3 transition-colors font-bold ${dark ? "text-white" : "text-black"}`}>Support</a>
             <div className="pt-2">

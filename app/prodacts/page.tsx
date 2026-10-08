@@ -406,6 +406,8 @@ export default function Home() {
           <nav className={`md:hidden flex flex-col gap-1 px-4 sm:px-5 pb-4 text-sm font-medium max-h-[70dvh] overflow-y-auto ${dark ? "text-white/70" : "text-black/60"}`}>
             <a href="#" onClick={rout_to_shop} className={`py-3 transition-colors ${navLink}`}>Shop</a>
             <a href="#" onClick={rout} className={`py-3 transition-colors ${navLink}`}>Deals</a>
+            <a onClick={rout_to_purchases} href="#" className={`transition-colors whitespace-nowrap ${navLink}`}>My Purchases</a>
+            
             <a href="/support" onClick={rout_to_support} className={`py-3 transition-colors ${navLink}`}>Support</a>
             <div className="pt-2">
               <GenerateButton onClick={() => { setMenuOpen(false); setchat(true) }}></GenerateButton>
